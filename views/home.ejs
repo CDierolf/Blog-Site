@@ -5,9 +5,10 @@
 
 <% posts.forEach(function(e) { %>
     <div class="post">
-        <h3> <%= e.title %> </h3>
+        <h3> <%= e.postTitle %> </h3>
         <p> 
-          <%= e.body.substring(0, 100) + "..."; %> <a href="/posts/<%=e.title%>">Read More</a> 
+          <%= e.postBody.substring(0, 100) + "..."; %> <a href="/posts/<%=e._id %>"" >Read More</a> 
+          <input type="hidden" value="<%=e._id %>" name="postID">
         </p>
     </div>
 <% }); %>
