@@ -19,7 +19,7 @@ app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static("public"));
 
 // MongoDB Connction
-mongoose.connect("mongodb+srv://Admin-C:test123@cluster0-jnq1u.mongodb.net/blogDB", {useNewUrlParser: true});
+mongoose.connect("mongodb+srv://<USERNAME>:<PASSWORD>@cluster0-jnq1u.mongodb.net/blogDB", {useNewUrlParser: true});
 
 // SCHEMA's
 const postSchema = new mongoose.Schema({
